@@ -264,6 +264,8 @@ export default function App() {
             loading="eager"
             fetchPriority="high"
             decoding="async"
+            width={1024}
+            height={576}
           />
           
           <motion.button 
@@ -573,7 +575,7 @@ export default function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-white py-10 px-4">
+      <section className="bg-white py-10 px-4 content-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-black text-center text-[#0F172A] mb-8">Depoimentos Reais</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -584,7 +586,16 @@ export default function App() {
             ].map((t, i) => (
               <div key={i} className="bg-white border border-orange-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-3 mb-3">
-                  <img alt={t.name} className={`w-10 h-10 rounded-full object-cover ${t.pos === "bottom" ? "object-bottom" : t.pos === "top" ? "object-top" : "object-center"}`} src={t.img} referrerPolicy="no-referrer" loading="lazy" decoding="async" />
+                  <img 
+                    alt={t.name} 
+                    className={`w-10 h-10 rounded-full object-cover ${t.pos === "bottom" ? "object-bottom" : t.pos === "top" ? "object-top" : "object-center"}`} 
+                    src={t.img} 
+                    referrerPolicy="no-referrer" 
+                    loading="lazy" 
+                    decoding="async" 
+                    width={40}
+                    height={40}
+                  />
                   <div>
                     <h3 className="font-bold text-[#0F172A] text-sm leading-tight">
                       {t.name}
@@ -606,7 +617,7 @@ export default function App() {
       {/* Author Section removed - backed up in backup_sections.json */}
 
       {/* Guarantee Section */}
-      <section className="bg-white py-6 px-4">
+      <section className="bg-white py-6 px-4 content-auto">
         <div className="max-w-xl mx-auto bg-white rounded-3xl shadow-[0_0_40px_rgba(0,0,0,0.05)] p-6 text-center border border-gray-100">
           <div className="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
             <div style={{ backgroundImage: 'linear-gradient(to right, #dc2626, #f97316)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
@@ -628,7 +639,7 @@ export default function App() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-12 px-4">
+      <section className="bg-white py-12 px-4 content-auto">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 text-center mb-8">Perguntas Frequentes</h2>
           <div className="space-y-3">

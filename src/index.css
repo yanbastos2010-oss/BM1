@@ -11,6 +11,11 @@
   --animate-scale-pulse: scale-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@utility content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
+
 @layer base {
   body {
     @apply antialiased text-gray-900 bg-white font-sans;
