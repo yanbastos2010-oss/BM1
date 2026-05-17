@@ -17,7 +17,6 @@ import {
   ChevronDown,
   X,
   Flame,
-  FileText,
   Download,
   Headphones,
   Mail,
@@ -208,14 +207,14 @@ export default function App() {
                 </div>
 
                 <button 
-                  onClick={() => (window as any).redirectWithParams('https://ggcheckout.app/checkout/v5/zLRQx1IzXIG72AEneWhl')}
+                  onClick={() => (window as any).redirectWithParams('https://checkout.pagmaterial.shop/VCCL1O8SD28A')}
                   className="w-full bg-[#00C853] hover:bg-[#00E676] text-white font-black py-3 px-4 rounded-xl text-sm sm:text-base uppercase tracking-wide transition-colors cursor-pointer mb-4 text-center leading-tight shadow-md"
                 >
                   SIM, QUERO O PLANO COMPLETO!
                 </button>
 
                 <button 
-                  onClick={() => (window as any).redirectWithParams('https://ggcheckout.app/checkout/v5/GUkTIpcnJlAOZY9uiGqt')}
+                  onClick={() => (window as any).redirectWithParams('https://checkout.pagmaterial.shop/VCCL1O8SD28C')}
                   className="w-full bg-white border-2 border-[#E2E8F0] text-[#94A3B8] font-black py-3 px-4 rounded-xl text-sm sm:text-base transition-colors cursor-pointer text-center leading-tight"
                 >
                   Não, prefiro o plano básico
@@ -392,6 +391,7 @@ export default function App() {
         </div>
       </section>
 
+
       {/* Pricing Section */}
       <section id="pricing" className="bg-white py-12 px-4 relative">
         <div className="max-w-3xl mx-auto">
@@ -552,7 +552,7 @@ export default function App() {
                 </div>
 
                 <button 
-                  onClick={() => (window as any).redirectWithParams('https://ggcheckout.app/checkout/v5/SAN8VuyY08gYFJODHDan')}
+                  onClick={() => (window as any).redirectWithParams('https://checkout.pagmaterial.shop/VCCL1O8SD28B')}
                   className="w-full bg-[#10B981] hover:bg-[#059669] text-white font-black py-2.5 rounded-lg uppercase tracking-wide transition shadow-lg animate-scale-pulse text-lg block text-center cursor-pointer"
                 >
                   Comprar Agora
@@ -599,7 +599,6 @@ export default function App() {
                   <div>
                     <h3 className="font-bold text-[#0F172A] text-sm leading-tight">
                       {t.name}
-                      {t.subName && <div className="text-[11px] font-medium text-gray-700">{t.subName}</div>}
                     </h3>
                     <p className="text-[10px] text-gray-500 mt-0.5">{t.role}</p>
                   </div>
