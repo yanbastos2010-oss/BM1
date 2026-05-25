@@ -33,18 +33,37 @@
       }
     </script>
     <meta charset="UTF-8" />
+    
+    <!-- Conexões Antecipadas (Preconnect & DNS Prefetch) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    
     <link rel="preconnect" href="https://cdn.utmify.com.br" />
+    <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
+    
     <link rel="preconnect" href="https://checkout.pagmaterial.shop" />
-    <link rel="preconnect" href="https://i.ibb.co" />
     <link rel="dns-prefetch" href="https://checkout.pagmaterial.shop" />
+    
+    <link rel="preconnect" href="https://i.ibb.co" />
     <link rel="dns-prefetch" href="https://i.ibb.co" />
+
+    <link rel="preconnect" href="https://imgur.com" />
+    <link rel="dns-prefetch" href="https://imgur.com" />
+    
+    <!-- Link Direto das Fontes para evitar bloqueio de renderização -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" />
+
+    <!-- Pré-carregamento de Ativos Críticos (Preload) -->
+    <link rel="preload" href="https://imgur.com/u20c05W.mp4" as="video" type="video/mp4" />
+    <link rel="preload" href="https://i.ibb.co/VYHZkxPd/Untitled-design-20260509-105632-0000.png" as="image" fetchpriority="high" />
+    <link rel="preload" href="https://i.ibb.co/jvgrT7kz/481325832-1050413120458638-3730499619153101241-n.webp" as="image" />
+    <link rel="preload" href="https://i.ibb.co/k6Wg3hkD/Captura-de-tela-2026-05-09-221515.png" as="image" />
+    <link rel="preload" href="https://i.ibb.co/gLvjhGH0/Captura-de-tela-2026-05-09-215452.png" as="image" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinâmicas SST</title>
-    <link rel="preload" href="https://imgur.com/u20c05W.mp4" as="video" type="video/mp4" />
-    <link rel="preload" href="https://i.ibb.co/VYHZkxPd/Untitled-design-20260509-105632-0000.png" as="image" />
   </head>
   <body>
     <div id="root"></div>

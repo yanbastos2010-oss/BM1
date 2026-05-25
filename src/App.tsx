@@ -4,7 +4,6 @@
  */
 
 import { 
-  Play, 
   Check, 
   ArrowDown, 
   Star, 
@@ -17,8 +16,6 @@ import {
   ChevronDown,
   X,
   Flame,
-  Download,
-  Headphones,
   Mail,
   Calendar,
   Award,
